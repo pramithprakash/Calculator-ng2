@@ -1,22 +1,16 @@
-
-
-        <form [formGroup]="group">
-            <div style="width:92px">
-            <div style="border: 1px solid #ddd;padding: 0 5px;" class="form-group big-font">
-                <div style="font-size: 10px;height:13px;">
-                <span>{{operation.input1}}</span>
-                <span>{{operation.sign}}</span>
-                <span>{{operation.input2}}</span>
-            </div>
-                <div style="height:43px;">
-                <span *ngIf="operation.result">{{operation.result | number : '1.0-2'}}</span>
-                </div>
-            </div>
-
-    <button
-     (click)="assignOperation(operator)" *ngFor="let operator of operators" [value]="operator.id">{{operator.sign}}</button>
-
-
-
+<form [formGroup]="group">
+<div style="width:92px">
+   <div style="border: 1px solid #ddd;padding: 0 5px;" class="form-group big-font">
+      <div style="font-size: 10px;height:13px;">
+         <span>{{operation.input1}}</span>
+         <span>{{operation.sign}}</span>
+         <span>{{operation.input2}}</span>
+      </div>
+      <div style="height:43px;">
+         <span>{{operation.result}}</span>
+      </div>
+   </div>
+   <button
+   (click)="assignOperation(operator)" *ngFor="let operator of operators" [value]="operator.id">{{operator.sign}}</button>
 </div>
-    <form>
+<form>

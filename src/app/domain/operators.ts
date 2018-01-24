@@ -10,9 +10,10 @@ export enum OperatorsEnum {
     nine,
     zero,
     addition= 1,
-    subtraction,
-    multiplication,
-    division
+    subtraction=2,
+    multiplication=3,
+    division=4,
+    equals=5
 }
 
 export class Operators {
@@ -30,6 +31,7 @@ export class Operators {
         {'id': OperatorsEnum.addition, 'name': 'Addition', sign: '+', 'operationId':1},
         {'id': OperatorsEnum.subtraction, 'name': 'Subtraction', sign: '-', 'operationId':2},
         {'id': OperatorsEnum.multiplication, 'name': 'Multiplication', sign: '*', 'operationId':3},
-        {'id': OperatorsEnum.division, 'name': 'Division', sign: '/', 'operationId':4}
+        {'id': OperatorsEnum.division, 'name': 'Division', sign: '/', 'operationId':4},
+        {'id': OperatorsEnum.equals, 'name': 'Equals', sign: '=', 'operationId':5}
     ];
 }

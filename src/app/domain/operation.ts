@@ -4,5 +4,5 @@ export class Operation {
     public sign:any;
     public operationId:number;
     public result:number;
-    public start:boolean;
+    public done:boolean;
 }
