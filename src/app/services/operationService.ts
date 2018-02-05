@@ -1,6 +1,6 @@
 import {Injectable} from "@angular/core";
-import {Operation} from '../domain/operation';
-import {OperatorsEnum} from '../domain/operators';
+import {Operation} from '../components/operation';
+import {OperatorsEnum} from '../components/operators';
 
 /**
  * The OperationService is responsible for handling all calculations.

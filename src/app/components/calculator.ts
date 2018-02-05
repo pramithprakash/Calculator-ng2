@@ -1,8 +1,8 @@
 import {Component} from '@angular/core';
 import {FormBuilder, FormGroup, FormControl, Validators} from '@angular/forms';
 
-import {Operation} from '../domain/operation';
-import {OperatorsEnum, Operators} from '../domain/operators';
+import {Operation} from './operation';
+import {OperatorsEnum, Operators} from './operators';
 import {OperationService} from '../services/operationService';
 
 @Component({
