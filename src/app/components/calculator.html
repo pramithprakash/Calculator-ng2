@@ -1,17 +1,17 @@
 <form [formGroup]="group">
-<div class="calculator">
-   <div class="display">
-      <div class="operation">
-         <span>{{operation.input1}}</span>
-         <span>{{operation.sign}}</span>
-         <span>{{operation.input2}}</span>
-      </div>
-      <div class="result">
-         <span>{{operation.result}}</span>
-      </div>
-   </div>
-   <button
-   [ngClass]="operator.class"
-   (click)="assignOperation(operator)" *ngFor="let operator of operators" [value]="operator.id">{{operator.sign}}</button>
-</div>
+    <div class="calculator">
+       <div class="display">
+          <div class="operation">
+             <span>{{operation.input1}}</span>
+             <span>{{operation.sign}}</span>
+             <span>{{operation.input2}}</span>
+          </div>
+          <div class="result">
+             <span>{{operation.result}}</span>
+          </div>
+       </div>
+       <button
+       [ngClass]="operator.class"
+       (click)="assignOperation(operator)" *ngFor="let operator of operators" [value]="operator.id">{{operator.sign}}</button>
+    </div>
 <form>

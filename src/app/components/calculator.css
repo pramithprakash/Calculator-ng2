@@ -1,8 +1,11 @@
 .calculator {
     width: 200px;
+    transform: translate(-50%, -70%);
+    position: absolute;
+    left: 50%;
+    top: 50%;
     background: #ddd;
     border-radius: 6px 6px 0 0;
-    font-family: monospace;
 }
 .display {
     border-radius: 6px 6px 0 0;
@@ -24,6 +27,7 @@
     height: 55px;
     color: #fff;
     font-size: 48px;
+    text-align: left;
 }
 .calculator button {
     width: calc(25% - 1px );
