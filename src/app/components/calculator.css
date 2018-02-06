@@ -1,33 +1,38 @@
 .calculator {
-    width: 200px;
-    transform: translate(-50%, -70%);
-    position: absolute;
-    left: 50%;
-    top: 50%;
+    width: 100%;
+    min-width: 320px;
+    max-width: 480px;
     background: #ddd;
-    border-radius: 6px 6px 0 0;
 }
 .display {
-    border-radius: 6px 6px 0 0;
     padding: 0 5px;
     background: #333;
     margin-bottom: 0;
+    height: 40vh;
+    text-align: right;
+    word-break: break-all;
+    display: table;
+    width: calc( 100% - 10px );
 }
 .operation {
     font-size: 18px;
-    height: 24px;
     color: #777;
-    line-height: 28px;
     overflow: hidden;
+    float: right;
+    margin: 10px;
 }
 .operation span {
     float: left;
 }
 .result {
-    height: 55px;
+    clear: both;
     color: #fff;
     font-size: 48px;
-    text-align: left;
+    display: table-row;
+}
+.result span {
+    display: table-cell;
+    font-size: 100%;
 }
 .calculator button {
     width: calc(25% - 1px );
@@ -35,7 +40,7 @@
     color: #333;
     border: 0;
     margin: 0 1px 1px 0;
-    height: 44px;
+    height: 15vh;
     line-height: 19px;
     font-size: 20px;
     outline: none;

@@ -3,6 +3,7 @@ export class Operation {
     public input2:any;
     public sign:any;
     public operationId:number;
-    public result:number;
+    public result:any;
     public done:boolean;
+    public fontSize:any;
 }

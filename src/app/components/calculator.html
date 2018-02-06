@@ -7,7 +7,7 @@
              <span>{{operation.input2}}</span>
           </div>
           <div class="result">
-             <span>{{operation.result}}</span>
+             <span [ngStyle]="{'font-size':operation.fontSize}">{{operation.result}}</span>
           </div>
        </div>
        <button
