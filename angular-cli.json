@@ -6,7 +6,7 @@
   "apps": [
     {
       "root": "src",
-      "outDir": "dist",
+      "outDir": "../../pramithprakash.github.io/calc/",
       "index": "index.html",
       "main": "main.ts",
       "polyfills": "polyfills.ts",
