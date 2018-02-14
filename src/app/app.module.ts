@@ -8,11 +8,12 @@ import { ReactiveFormsModule } from '@angular/forms';
 import { AppComponent } from './app.component';
 import { CalculatorComponent } from './components/calculator';
 import { OperationService } from './services/operationService';
+import { FontStylingService } from './services/fontStylingService';
 
 @NgModule({
   imports: [BrowserModule, HttpModule, FormsModule, ReactiveFormsModule],
   declarations: [AppComponent, CalculatorComponent],
-  providers: [OperationService],
+  providers: [OperationService, FontStylingService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
