@@ -72,6 +72,9 @@ export class CalculatorComponent {
             this.operation.result = this.operation.input2;
         }
         else if(operation.operationId === 5){
+            if(!this.operation.input1 || !this.operation.input2 || !this.operation.result){
+                return;
+            }
             this.operation.done = true;
             this.runOperation(this.operation);
         }
